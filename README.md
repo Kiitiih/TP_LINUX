@@ -22,6 +22,8 @@ Chemin sur VM est l'endroit ou on est, chemin sur soc on peut écrire juste les 
 Ensuite dans Tera term on fait ./ le nom du fichier (./ = éxecuter)
 
 2.1. Accès aux registres
+On travaille sur des adresses virtuelles, mais le FPGA a des adresses physiques. Si on veut écrire sur une adresse physique sur le FPGA, il faut trouver une adresse virtuelle qui va correspondre à celle la, en gros on créer un pointeur sur l'adresse physique avec la fonction mmmap. Par exemple dans le cours on a : 
+p = (uint32_t*)mmap(NULL, 4, PROT_WRITE|PROT_READ, MAP_SHARED,fd, 0xFF203000);      ou NULL correspond à l'adresse ou on voudrait qu'il écrire, nous on lui dit de prendre celle qu'il veut avec le NULL. le 4 est le nombre d'octet car on est sur un système 32 bits. Le prot write/read nous permet d'écrire et de lire sur l'adresse, le map_share permet que la mémoire soit accèssible par autre chose que notre programme, le fd est le fileopen et le FF correspond à l'adresse physique que l'ont veut pointer. 
 Cette méthode permet de prototyper rapidement mais présentent deux limites :
 C'est pas portable on a spécifié notre adressse en dur
 Cette méthode ne permet pas de travailler sur Driver plus compliqué (avec interrupetion) car on travaille actuellement en mode utilisateur hors toutes les interruptions sont fait en mode noyau
