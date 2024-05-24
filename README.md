@@ -35,3 +35,6 @@ Commande pour décharger le module : rmmod
 
 Avec la commande sudo dmesg on voit : Hello World qui s'affiche car il y a KERN_INFO dans le code de moodle
 Et en déchargeant le module "Bye, Bye" s'écrit en rouge car il y a écrit KERN_ALERT dans le code
+
+
+Il existe un dossier proc (fourre-tout) dans linux, on veut créer un fichier texte (virtuel) dans ce dossier. Pour se faire, on va écrire des fonctions dans notre module. En regardant dans le cours, on trouve les fonctions write, read et supression. On copie ces fonctions dans notre fichier qui contient le module. On créer une structure qui va intégrer ces fonctions struct file_operations proc_fops; et on va les appeler dans la fonction init du noyaux (proc_fops.write = fops_write; proc_fops.read = fops_read;) 
