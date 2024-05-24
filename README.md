@@ -20,3 +20,6 @@ ioports vide sur la SoC parce qu'on est sur une architecture ARM, par contre on 
 Après avoir créer l'executable on veut le mettre sur la carte, on utilise la ligne suivante : scp chemin_sur_VM root@IP_DE_LA_CARTE_SOC:chemin_sur_SOC
 Chemin sur VM est l'endroit ou on est, chemin sur soc on peut écrire juste les : après l'adresse et ca mettera l'executable dans le home
 Ensuite dans Tera term on fait ./ le nom du fichier (./ = éxecuter)
+
+C'est pas portable on a spécifié notre adressse en dur
+Cette méthode ne permet pas de travailler sur Driver plus compliqué (avec interrupetion) car on travaille actuellement en mode utilisateur hors toutes les interruptions sont fait en mode noyau
