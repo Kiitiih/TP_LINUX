@@ -33,5 +33,5 @@ On a chargé et déchargé un module dans le noyau.
 Commande pour insérer le module : insmod
 Commande pour décharger le module : rmmod
 
-Avec la commande sudo ... on voit : Hello World qui s'affiche car il y a ... dans le code de moodle
-Et en déchargeant le module "Bye, Bye" s'écrit en rouge car il y a écrit ... dans le code
+Avec la commande sudo dmesg on voit : Hello World qui s'affiche car il y a KERN_INFO dans le code de moodle
+Et en déchargeant le module "Bye, Bye" s'écrit en rouge car il y a écrit KERN_ALERT dans le code
