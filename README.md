@@ -21,5 +21,7 @@ Après avoir créer l'executable on veut le mettre sur la carte, on utilise la l
 Chemin sur VM est l'endroit ou on est, chemin sur soc on peut écrire juste les : après l'adresse et ca mettera l'executable dans le home
 Ensuite dans Tera term on fait ./ le nom du fichier (./ = éxecuter)
 
+2.1. Accès aux registres
+Cette méthode permet de prototyper rapidement mais présentent deux limites :
 C'est pas portable on a spécifié notre adressse en dur
 Cette méthode ne permet pas de travailler sur Driver plus compliqué (avec interrupetion) car on travaille actuellement en mode utilisateur hors toutes les interruptions sont fait en mode noyau
