@@ -27,3 +27,11 @@ p = (uint32_t*)mmap(NULL, 4, PROT_WRITE|PROT_READ, MAP_SHARED,fd, 0xFF203000);  
 Cette méthode permet de prototyper rapidement mais présentent deux limites :
 C'est pas portable on a spécifié notre adressse en dur
 Cette méthode ne permet pas de travailler sur Driver plus compliqué (avec interrupetion) car on travaille actuellement en mode utilisateur hors toutes les interruptions sont fait en mode noyau
+
+2.2. Compilation de module noyau sur la VM
+On a chargé et déchargé un module dans le noyau. 
+Commande pour insérer le module : insmod
+Commande pour décharger le module : rmmod
+
+Avec la commande sudo ... on voit : Hello World qui s'affiche car il y a ... dans le code de moodle
+Et en déchargeant le module "Bye, Bye" s'écrit en rouge car il y a écrit ... dans le code
