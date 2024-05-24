@@ -16,3 +16,7 @@ Cd .. ramène au dossier racine juste au dessus de celui dans lequel on se trouv
 Cd ~ ramène sur le home 
 Cd. on n'a l'impression qu'il ne fait rien mais il te remet dans le dossier actuel
 ioports vide sur la SoC parce qu'on est sur une architecture ARM, par contre on a des choses sur celui de VM car on a une architecture de PC.
+
+Après avoir créer l'executable on veut le mettre sur la carte, on utilise la ligne suivante : scp chemin_sur_VM root@IP_DE_LA_CARTE_SOC:chemin_sur_SOC
+Chemin sur VM est l'endroit ou on est, chemin sur soc on peut écrire juste les : après l'adresse et ca mettera l'executable dans le home
+Ensuite dans Tera term on fait ./ le nom du fichier (./ = éxecuter)
