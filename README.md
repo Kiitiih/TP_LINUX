@@ -69,3 +69,6 @@ On copie un fichier dans notre répertoire de travail eton le renomme
 On compile le fichier .dts en un fichier .dtb
 On accède ensuite à la partition de boot dans le VEEK où on renomme notre fichier .dtb en .old et on copie notre copie notre fichier .dtb dans le PC avant de rebooter la carte
 Le nouveau device tree notre montre notre fichier ensea :
+
+![image](https://github.com/Kiitiih/TP_LINUX/assets/144770585/a7696e34-827d-405b-bc35-0505d40256e8)
+
