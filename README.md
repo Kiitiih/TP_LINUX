@@ -53,4 +53,7 @@ C'est pour ca qu'on met un tiret à la fin du chemin car c'est le cross .gcc
 2.3.3 Hello World
 On creer un nouveau fichier Hello2 et on modifie notre makefile en mettant en jour le chemin du noyau
 
+![image](https://github.com/Kiitiih/TP_LINUX/assets/144770585/8c508a15-7136-4680-bc95-59329f370a3b)
+
+
 
