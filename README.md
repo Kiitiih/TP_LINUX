@@ -60,3 +60,7 @@ La compilation ne marche pas car on peut pas le faire dans un dossier partagé. 
 
 ![image](https://github.com/Kiitiih/TP_LINUX/assets/144770585/b063b229-38dd-4464-9e74-6f2cc2c44629)
 
+TP3 : Device tree 
+
+ 
+
