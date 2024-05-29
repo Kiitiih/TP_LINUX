@@ -39,13 +39,15 @@ Et en déchargeant le module "Bye, Bye" s'écrit en rouge car il y a écrit KERN
 
 Il existe un dossier proc (fourre-tout) dans linux, on veut créer un fichier texte (virtuel) dans ce dossier. Pour se faire, on va écrire des fonctions dans notre module. En regardant dans le cours, on trouve les fonctions write, read et supression. On copie ces fonctions dans notre fichier qui contient le module. On créer une structure qui va intégrer ces fonctions struct file_operations proc_fops; et on va les appeler dans la fonction init du noyaux (proc_fops.write = fops_write; proc_fops.read = fops_read;) 
 
+Récupéreation de la configuration actuelle du noyau
 On fait des modifs (configuration du noyau) pour pouvoir compiler notre module par la suite
 scp copie source vers destination
-. raccourci pour ce dossier
-fichier .gz est un fichier compressé, on fait la commande gnzip pour dezipper
-mv pour deplacer et renommer en .config (qui la fait disparaitre car il devient un ficier caché)
-les makefiles qu'on doit faire s'attend à avoir un fichier .config d'où le fait de la renommer
-le makefile il fait appel au CROSS_COMPILE -gcc
+Le point (.) est un raccourci pour "ce dossier"
+Les fichiers qui se terminent par .gz sont des fichiers compressés, on les dézippe avec la commande gnzip
+La commande mv pour deplacer et renommer en .config (qui la fait disparaitre car il devient un ficier caché)
+Les makefiles qu'on doit faire s'attend à avoir un fichier .config d'où le fait de la renommer
+
+Le makefile fait appel au CROSS_COMPILE -gcc
 C'est pour ca qu'on met un tiret à la fin du chemin car c'est le cross .gcc
 
 
