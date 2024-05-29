@@ -50,4 +50,7 @@ Les makefiles qu'on doit faire s'attend à avoir un fichier .config d'où le fai
 Le makefile fait appel au CROSS_COMPILE -gcc
 C'est pour ca qu'on met un tiret à la fin du chemin car c'est le cross .gcc
 
+2.3.3 Hello World
+On creer un nouveau fichier Hello2 et on modifie notre makefile en mettant en jour le chemin du noyau
+
 
