@@ -15,4 +15,11 @@ Pwd donne le chemin ou on se situe
 Cd .. ramène au dossier racine juste au dessus de celui dans lequel on se trouve 
 Cd ~ ramène sur le home 
 Cd. on n'a l'impression qu'il ne fait rien mais il te remet dans le dossier actuel
+
 ioports vide sur la SoC parce qu'on est sur une architecture ARM, par contre on a des choses sur celui de VM car on a une architecture de PC.
+
+On crée un fichier hello.c en local sur le PC ensuite l'ajouter en dossier partagé dans la VM
+Mettre un point de montage de là où il se trouve sur la VM
+Compiler sur la VM avec la ligne donnée dans l'énoncé 
+Ca crée un exécutable
+Avec la ligne scp on envoie l'exécutable à la carte et on peut ensuite l'exécuter sur la carte avec TerraTerm
