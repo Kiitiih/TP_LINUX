@@ -55,5 +55,6 @@ On creer un nouveau fichier Hello2 et on modifie notre makefile en mettant en jo
 
 ![image](https://github.com/Kiitiih/TP_LINUX/assets/144770585/8c508a15-7136-4680-bc95-59329f370a3b)
 
+La compilation ne marche pas car on peut pas le faire dans un dossier partagé. Pour cela on créé un autre dossier où on copie et le code et le makefile et on compile de nouveau et cette foic ci la compilation marche
 
 
